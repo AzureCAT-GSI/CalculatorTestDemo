@@ -1,6 +1,6 @@
 ﻿namespace Calculator.Web
 {
-    public class Calculator
+    public class Calculator : ICalculator
     {
         public double Add(double x, double y)
         {

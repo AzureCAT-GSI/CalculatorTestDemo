@@ -5,16 +5,11 @@ namespace Calculator.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly Calculator calculator;
+        private readonly ICalculator calculator;
 
-        public HomeController()
+        public HomeController(ICalculator calculator)
         {
-            calculator = new Calculator();
-        }
-
-        public ActionResult Index()
-        {
-            return View();
+            this.calculator = calculator;
         }
 
         public ActionResult Add()
