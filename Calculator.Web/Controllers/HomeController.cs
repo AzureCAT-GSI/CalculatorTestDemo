@@ -12,11 +12,6 @@ namespace Calculator.Web.Controllers
             calculator = new Calculator();
         }
 
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         public ActionResult Add()
         {
             return View(new CalculatorModel());
